@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="Dr. Bajó Gábor bemutatkozik.">
+    <meta name="keywords" content="bemutatkozás, Bajó Gábor, Training360">
+    <title>Dr. Bajó Gábor</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Dr. Bajó Gábor bemutatkozó oldala</h1>
+    </header>
+
+    <nav id="navigation">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="works.html">Works</a>
+            </li>
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <img class="img-profil" src="images/profil.jpg" alt="profilkép">
+            <h3>Magamról</h3>
+            <p>Előljáróban annyit, hogy nem szeretek magamról beszélni, ezért ez elég rövid lesz. Szerencsére amúgy sem kell hosszú lére ereszteni...</p>
+            <p>Dr. Bajó Gábor vagyok. Már sok mindennel foglalkoztam eddig életemben:</p>
+            <ul>
+                <li><strong>orvosként</strong>t végeztem Budapesten</li>
+                <li>majd megszereztem a <strong>klinikai mikrobiológiai szakvizsgát</strong></li>
+                <li>öt évet dolgoztam <strong>kórházi mikrobiológiai laboratóriumokban</strong></li>
+                <li>majd <strong>orvoslátogató</strong> voltam tíz éven keresztül</li>
+                <li>ezután kilenc évig <strong>tanítottam</strong> egészségügyi szakgimnáziumban</li>
+                <li>most pedig <strong>junior frontend fejlesztőnek</strong> tanulok a Training360-nál</li>
+            </ul>
+            <p>Szeretek olvasni,a mikroszkópommal megnézni mindent, amit lehet, íjjászkodni. De legjobban a családommal szeretek lenni. Öt gyermekem van:</p>
+            <ol>
+                <li>Ruben, 24 éves</li>
+                <li>Rebeka, 23 éves</li>
+                <li>Abigél, 21 éves</li>
+                <li>Ráhel, 19 éves</li>
+                <li>Éda, 11 éves</li>
+            </ol> 
+            <p>Ahogy látszik, szeretem a változatosságot, a kihívásokat. A feleséggemel együtt már drótkötél erősségü az idegrendszerünk.😁</p>
+        </section>
+        <section>            
+            <form id="form">
+                <fieldset>
+                    <legend>Üzenetküldés</legend>
+                    <label>Név: </label><input id="nev" type="text" placeholder="Név" title="A név legyen legalább öt karakter hosszú!" pattern="[A-Za-z]{3}">
+                    <label>Email cím: </label><input id="email" type="email" placeholder="Email cím" title="Az email cím formátuma: valami@valami.valami" pattern="[a-z0-9.]{1,}[@][a-z0-9.]{1,}[.][a-z]..">
+                    <label>Üzenet szövege: </label><textarea id="uzenet" rows="4" cols="40" placeholder="Legalább 20 karakternyi üzenet!" title="Legalább 20 karakternyi üzenetet írj!" pattern=".{20,}"></textarea>
+                    <input type="button" id="kuld" value="Üzenetküldés">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <button onclick="document.location='#navigation'">Vissza a menühöz</button>
+    </footer>
+</body>
+</html>

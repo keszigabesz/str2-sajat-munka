@@ -1,0 +1,135 @@
+@charset "utf-8";
+@font-face {
+    font-family: Noto;
+    src: url(../font/NotoSans-Regular.ttf);
+  }
+body{
+    background-color: #f9f2ec;
+    padding: 10px;
+    font-family: Noto;
+}
+header{
+    background-color: #392613;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+/* navigation */
+
+nav ul{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
+nav li{
+    list-style-type: none;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+}
+nav a:hover{    
+    background-repeat: no-repeat;
+    background-color: white; 
+    color: #604020;
+}
+nav{
+    background-color: #604020;
+    padding: 5px;
+}
+
+/*footer*/
+
+footer{
+    background-color: #392613;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/*home oldal képek*/
+
+.img-home{
+    max-width: 400px;
+    display: block;
+    margin: 10px;
+}
+
+/*home oldal boxok*/
+.box{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+.p-box{
+    max-width: 300px;
+    max-height: 300px;
+    border: solid 2px #392613;
+    text-align: center;
+    padding: 10px;
+}
+
+/*gallery képek*/
+.gallery-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+.img-gallery{
+    max-width: 400px;
+    display: block;
+    margin: 10px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+/*about kép*/
+.img-profil{
+    max-width: 200px;
+    float: left;
+    margin: 20px;
+}
+
+/*form*/
+#form{    
+    width: 60%;
+    margin: auto;
+}
+label, input, textarea{
+    display: block;
+    margin: 5px;
+}
+
+/*projektek*/
+.project{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
+.img-project{
+    max-width: 500px;
+    margin: 10px;
+}
+.p-project{
+    max-width: 300px;
+    max-height: 300px;
+    border: solid 2px #392613;
+    text-align: center;
+    padding: 10px;
+}
+
+/*mobilnézet*/
+
+@media screen and (max-width: 768px){
+    nav ul{
+        display: block;
+    }
+    .box{
+        display: block;
+    }
+    .gallery-container{
+        display: block;
+    }
+    .project{
+        display: block;
+    }
+}
