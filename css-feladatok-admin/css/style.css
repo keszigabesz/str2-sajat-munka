@@ -22,36 +22,42 @@
     margin: 10px;
     grid-template-columns: 1;
 }
+
 .header__menu {
     margin: 12px;
 }
 
 .header__search {
     display: inline;
-    max-width: 300px;margin: 5px;
+    max-width: 300px;
+    margin: 5px;
 }
+
 .search__input {
     float: left;
-  width: 80%;
-  border-radius: 4px 0px 0px 4px;
-  padding: 0.375rem 0.75rem 0.375rem 0.75rem;
-  font-size: 1.2rem;
-  border: none;
+    width: 80%;
+    border-radius: 4px 0px 0px 4px;
+    padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+    font-size: 1.2rem;
+    border: none;
 
 }
+
 .search__input:focus {
-    border: solid 1px rgb(128, 189, 255 );
+    border: solid 1px rgb(128, 189, 255);
     animation: border 0.15s linear;
 }
+
 .search__btn {
     background-color: rgb(0, 123, 255);
-    /* float: left; */
-  width: 20%;
-  border-radius: 0px 4px 4px 0px;
-  padding: 0.375rem 0.75rem 0.375rem 0.75rem;
-  font-size: 1.2rem;
-  border: none;
+    color: rgb(236, 236, 236);
+    width: 20%;
+    border-radius: 0px 4px 4px 0px;
+    padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+    font-size: 1.2rem;
+    border: none;
 }
+
 .header__user {
     margin: 12px;
 }
@@ -84,6 +90,7 @@ main {
     margin-bottom: 20px;
     padding-top: 10px;
 }
+
 .nav__ul li h5 {
     margin-bottom: 15px;
 }
@@ -107,7 +114,8 @@ main {
     background-color: rgb(233, 236, 239);
     border-radius: 0.25rem;
     padding: 1rem 1.5rem;
-    color: rgb(153, 153, 153);margin: 20px 0px;
+    color: rgb(153, 153, 153);
+    margin: 20px 0px;
 }
 
 /* Cards */
@@ -124,23 +132,39 @@ main {
 }
 
 .main__card--blue {
-    background-color: rgb(0, 123, 255);    
-    animation: blueMove 0.3s ease;
+    background-color: rgb(0, 123, 255);
+    animation: movie 0.3s ease;
+}
+
+.main__card--blue:hover {
+    animation: movie2 .3s ease;
 }
 
 .main__card--yellow {
     background-color: rgb(255, 193, 7);
-    animation: yellowMove 0.3s ease;
+    animation: movie 0.3s ease;
+}
+
+.main__card--yellow:hover {
+    animation: movie2 0.3s ease;
 }
 
 .main__card--green {
     background-color: rgb(40, 167, 69);
-    animation: greenMove 0.3s ease;
+    animation: movie 0.3s ease;
+}
+
+.main__card--green:hover {
+    animation: movie2 0.3s ease;
 }
 
 .main__card--red {
     background-color: rgb(220, 53, 69);
-    animation: redMove 0.3s ease;
+    animation: movie 0.3s ease;
+}
+
+.main__card--red:hover {
+    animation: movie2 0.3s ease;
 }
 
 .card__top {
@@ -149,22 +173,25 @@ main {
     align-items: center;
     padding: 10px;
 }
+
 .card__top--blue {
     border-bottom: rgb(0, 99, 204) solid 2px;
 }
+
 .card__top--yellow {
     border-bottom: rgb(230, 172, 0) solid 2px;
 }
+
 .card__top--green {
     border-bottom: rgb(35, 144, 60) solid 2px;
 }
+
 .card__top--red {
     border-bottom: rgb(195, 34, 50) solid 2px;
 }
+
 .card__bottom {
     height: 50px;
-    /* display: flex;    
-    align-items: center; */
     padding: 10px;
     margin: auto;
 }
@@ -176,49 +203,67 @@ main {
 
 
 /* Movie!!!!!!! */
-@keyframes blueMove {
-    from {background-color: rgb(255, 255, 255);}
-    to {background-color: rgb(0, 123, 255);}
-  }
-@keyframes yellowMove {
-    from {background-color: rgb(255, 255, 255);}
-    to {background-color: rgb(230, 172, 0);}
-  }
-@keyframes greenMove {
-    from {background-color: rgb(255, 255, 255);}
-    to {background-color: rgb(35, 144, 60);}
-  }
-@keyframes redMove {
-    from {background-color: rgb(255, 255, 255);}
-    to {background-color: rgb(195, 34, 50);}
-  }
+@keyframes movie {
+    50% {
+        transform: rotate(20deg);
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+@keyframes movie2 {
+    25% {
+        transform: rotate(2deg);
+        background-color: rgb(217, 217, 217);
+    }
+
+    50% {
+        transform: rotate(10deg);
+        background-color: rgb(255, 255, 255);
+    }
+
+    75% {
+        transform: rotate(2deg);
+        background-color: rgb(217, 217, 217);
+    }
+}
+
 @keyframes border {
-    from {border-color: rgb(255, 255, 255);}
-    to {border-color: rgb(128, 189, 255 );}
-  }
+    from {
+        border-color: rgb(255, 255, 255);
+    }
 
-  /* Reszponzivitás */
+    to {
+        border-color: rgb(128, 189, 255);
+    }
+}
 
-  @media screen and (max-width: 700px) {
+/* Reszponzivitás */
+
+@media screen and (max-width: 700px) {
     .main__cards {
         display: block;
     }
+
     .main__card {
         margin-bottom: 10px;
     }
+
     .main__nav {
         min-width: 120px;
     }
-    .nav__ul li a, .nav__ul li h4 {
+
+    .nav__ul li a,
+    .nav__ul li h4 {
         display: none;
     }
+
     .nav__ul {
         padding-left: 20px;
     }
-  }
+}
 
 
- /*  footer {
+/*  footer {
     background-color: rgb(51, 57, 64);
     color: rgb(236, 236, 236);
     padding: 5px;
