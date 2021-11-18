@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* font-family: 'Press Start 2P', cursive; 
+font-family: 'Lobster', cursive;*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #006600;
+}
+
+.wrapper {
+    width: 882px;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header,
+main {
+    width: 100%;
+}
+
+header {
+    height: 120px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+header h1,
+header h3 {
+    margin: 5px 0;
+    text-shadow: 4px 4px 8px #000000;
+}
+
+main {
+    height: 600px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.game__table {
+    width: 100%;
+    height: 520px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-template-rows: 217px 217px;
+    grid-gap: 30px;
+}
+
+
+.card {
+    cursor: pointer;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+
+.card__front {
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    background-color: white;
+    color: #e60000;
+    font-size: 120px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    box-shadow: 4px 4px 8px #000000;
+    border-radius: 10px;
+    border: #e60000 8px double;
+}
+
+.card__back {
+    backface-visibility: hidden;
+    height: 100%;
+    box-shadow: 4px 4px 8px #000000;
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 10px;
+
+}
+
+.flip {
+    transform: rotateX(180deg);
+    pointer-events:none;
+}
