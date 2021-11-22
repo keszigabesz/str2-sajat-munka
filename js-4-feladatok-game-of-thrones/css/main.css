@@ -1,0 +1,97 @@
+@font-face {
+  font-family: GameOfThrones;
+  src: url('../fonts/Game_of_Thrones.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('../assets/site/mapblue.jpg');
+}
+
+header {
+  font-family: GameOfThrones;
+  background-color: black;
+  color: white;
+  padding: 30px 20px;
+
+}
+
+header h1 {
+  display: inline;
+}
+
+#search__input:focus {
+  width: 30%;
+}
+
+#search__input {
+  float: right;
+  height: 35px;
+  border-radius: 3px;
+  padding: 3px;
+  border: 3px grey solid;
+  max-width: 30%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 2%;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  main {
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    grid-template-columns: 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1%;
+    grid-gap: 1.6%;
+  }
+}
+
+
+.character__container {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.character__container img:hover {
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px #595959;
+}
+
+.character__container p:hover {
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #595959;
+}
+
+.character__container p {
+  padding: 2px;
+  cursor: pointer;
+}
+.character__container img{
+  cursor: pointer;
+}
+
