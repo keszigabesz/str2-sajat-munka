@@ -15,24 +15,23 @@ function search() {
 }
 
 
-let characterData=[];
 //Build up character containers
 
-const bulidUpCharacterContainer = () => {
-    console.log(characterData);
-    for (let i = 0; i < characterData.lenght; i++) {
+let characterData;
+const buildUpCharacterContainer = () => {
+    for (let i = 0; i < characterData.length; i++) {
         const p = document.createElement('p');
         p.innerText = characterData[i].name;
         const img = document.createElement('img');
         img.setAttribute('src', characterData[i].portrait)
         img.setAttribute('alt', characterData[i].name)
         const div = document.createElement('div');
-        div.setAttribute('class', "character__container")        
+        div.setAttribute('class', "character__container")
         div.appendChild(img);
         div.appendChild(p);
-        document.body.main.appendChild(div);        
-    }      
-    
+        main.appendChild(div);
+    }
+    modalOpener();
 }
 
 //Collecting data from json
@@ -44,7 +43,7 @@ const refineData = rawCharacterData => {
     const rnd = Math.floor(Math.random() * alphabeticData.length);
     alphabeticData.splice(rnd, 1);
     characterData = alphabeticData;
-    bulidUpCharacterContainer();
+    buildUpCharacterContainer();
 }
 const getData = async () => {
     const response = await fetch('../json/got.json');
@@ -53,3 +52,52 @@ const getData = async () => {
 };
 
 window.addEventListener("load", getData);
+
+
+//Modal
+const modal = document.querySelector(".modal");
+function modalOpener(){
+    const modalOpen = document.querySelectorAll(".character__container");
+    const modalName = document.querySelector(".modal__character--name");
+    const modalBio = document.querySelector(".modal__character--bio");
+    const modalPicture = document.querySelector("#modal__img");
+    const modalBadge = document.querySelector("#modal__badge");
+    for (let i = 0; i < modalOpen.length; i++) {
+        modalOpen[i].addEventListener("click", function () {
+            modalName.innerText=characterData[i].name;
+            if (characterData[i].bio) {
+                modalBio.innerText=characterData[i].bio;
+            } else {
+                modalBio.innerText="No character bio.";
+            }
+            if (characterData[i].picture) {
+                modalPicture.setAttribute('src', characterData[i].picture);
+                modalPicture.setAttribute('alt', characterData[i].name);
+            } else {
+                modalPicture.setAttribute('src', '../assets/site/placeholder.png');
+                modalPicture.setAttribute('alt', 'No specific picture.');
+            }
+            if (characterData[i].house) {
+                modalBadge.setAttribute('src', `../assets/houses/${characterData[i].house}.png`);
+                modalBadge.setAttribute('alt', characterData[i].house);                
+            } else {
+                
+            }
+            modal.style.display = "block";
+        })
+        
+        
+    }
+}
+
+window.onclick = function (event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}
+
+const modalCloseBtn = document.querySelector('#modal__close');
+modalCloseBtn.onclick = () => {
+    modal.style.display = "none";
+    
+}
