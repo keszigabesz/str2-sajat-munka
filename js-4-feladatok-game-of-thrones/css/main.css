@@ -2,9 +2,12 @@
   font-family: GameOfThrones;
   src: url('../fonts/Game_of_Thrones.ttf');
 }
+@font-face {
+  font-family: Kings;
+  src: url('../fonts/Kings-Regular.ttf');
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -133,9 +136,8 @@ p{
 }
 
 .modal__character--name{
-  font-family: 'Tangerine', cursive;
-  font-weight: bold;
-  font-size: 1.2em;
+  font-family: Kings;
+  font-size: 1.7em;
   position: relative;
   left: 35px;
 }
@@ -148,7 +150,7 @@ p{
 
 #modal__badge{
   position: absolute;
-  top: -4px;
+  top: -1px;
 }
 
 .modal__character--bio{
