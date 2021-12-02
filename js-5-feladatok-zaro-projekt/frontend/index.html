@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunder Mifflin</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/402e76f4f2.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./img/Dunder_Mifflin,_Inc.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <img src="./img/Dunder_Mifflin,_Inc.svg" alt="Dunder Mifflin Logo">
+        <h1>Customer Administration Site</h1>
+    </header>
+
+    <main>
+        <div id="main__btn">
+            <button id="btnDelete" title="Delete costumer"><i class="fas fa-user-minus fa-2x"></i></button>
+            <button id="btnAdd" title="Add new costumer"><i class="fas fa-user-plus fa-2x"></i></button>
+            <button id="btnEdit" title="Edit costumer"><i class="fas fa-user-edit fa-2x"></i></button>
+            <button id="btnScrollUp" title="Jump to the top of the page"><i
+                    class="fas fa-angle-double-up fa-2x"></i></button>
+        </div>
+        <div id="input__container" class="hide">
+            <h2 id="input__add" class="hide">Add new user</h2>
+            <h2 id="input__edit" class="hide">Edit user</h2>
+            <table id="input__table">
+                <thead id="input__thead">
+                    <tr class="input__tr">
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>City</th>
+                        <th>Street Name</th>
+                        <th>Street Type</th>
+                        <th>Street Number</th>
+                    </tr>
+                </thead>
+                <tbody id="input__tbody">
+                    <tr class="input__tr">
+                        <td><input type="text" name="id"></td>
+                        <td><input type="text" name="first_name" placeholder="FirstName"></td>
+                        <td><input type="text" name="last_name" placeholder="LastName"></td>
+                        <td><input type="text" name="email" placeholder="joh.doe@something.aaa"></td>
+                        <td><input type="text" name="city" placeholder="City"></td>
+                        <td><input type="text" name="street_name" placeholder="StreetName"></td>
+                        <td><input type="text" name="street_suffix" placeholder="StreetType"></td>
+                        <td><input type="text" name="street_number" placeholder="1234"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="input__btn">
+                <div id="btnNewOK"><i class="far fa-check-circle fa-3x"></i></div>
+                <div id="btnEditOK"><i class="far fa-check-circle fa-3x"></i></div>
+                <i class="far fa-times-circle fa-3x" id="btnClose"></i>
+            </div>
+        </div>
+        <div id="table__container"></div>
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+
+</body>
+
+</html>

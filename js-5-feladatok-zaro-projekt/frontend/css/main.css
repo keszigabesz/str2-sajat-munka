@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* header */
+header {
+    height: 120px;
+    background-color: black;
+    color: white;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 3px;
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
+}
+
+header img {
+    height: 100%;
+}
+
+/* Buttons */
+#main__btn {
+    float: right;
+    padding: 5px;
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    right: 0;
+    background-color: black;
+}
+
+button {
+    padding: 5px;
+    width: 90%;
+    border-radius: 4px;
+    margin: 10px auto;
+    background-color: black;
+    cursor: pointer;
+}
+
+i {
+    color: white;
+}
+
+/* input table */
+#input__container {
+    width: 90%;
+    height: 300px;
+    background-color: black;
+    margin: 0px 90px 50px auto;
+    color: white;
+    padding: 20px 0px;
+}
+
+#input__table {
+    margin: 0px auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#input__add,
+#input__edit {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+input[type=text] {
+    padding: 8px;
+}
+
+.input__tr {
+    display: grid;
+    grid-template-columns: 5% 12% 12% 23% 12% 12% 12% 12%;
+}
+
+#input__btn {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.far {
+    margin: 30px;
+    cursor: pointer;
+}
+
+input[name=id] {
+    background-color: #d9d9d9;
+    pointer-events: none;
+}
+
+/* main table */
+#main__table {
+    width: 92%;
+    margin-left: auto;
+    border-collapse: collapse;
+}
+
+#main__head {
+    position: sticky;
+    top: 0;
+}
+
+.main__tr {
+    display: grid;
+    grid-template-columns: 4% 12% 12% 20% 12% 12% 10% 10% 5%;
+}
+
+th {
+    background-color: black;
+    color: white;
+    padding: 7px;
+    text-align: left;
+    height: 40px;
+}
+
+td {
+    border-bottom: 1px solid black;
+    height: 35px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 1.2rem;
+}
+
+#table__container {
+    margin-bottom: 50px;
+}
+
+/* hide elements */
+.hide {
+    display: none;
+}
+
+/* inactive button */
+.inactive {
+    pointer-events: none;
+}
