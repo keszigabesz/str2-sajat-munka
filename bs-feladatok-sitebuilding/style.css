@@ -1,0 +1,118 @@
+.catamaran {
+    font-family: 'Catamaran', Helvetica, Arial, sans-serif;
+}
+
+.lato {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+.mulish {
+    font-family: 'Mulish', Helvetica, Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.color-magenta {
+    color: #ae325c;
+}
+
+.color-yellow {
+    color: #fdcc52;
+}
+
+.background-yellow {
+    background: #fdcc52;
+}
+
+.btn-hover {
+    border-color: white;
+}
+
+.btn-hover:hover {
+    background-color: #fdcc52;
+    border-color: #fdcc52;
+}
+
+.navbar-hover-coloChange:hover {
+    color: white;
+}
+
+.nav-link {
+    color: lightgray;
+}
+
+header {
+    background-image: url('img/bg-pattern.png'), linear-gradient(to right, #da2431, #7a4397);
+}
+
+.image-container {
+    position: relative;
+    width: 190px;
+}
+
+.phone-img {
+    width: 100%;
+}
+
+.phone-screen-img {
+    position: absolute;
+    width: 88%;
+    top: 11%;
+    left: 6%;
+}
+
+.store-img {
+    width: 130px;
+}
+
+.card-body {
+    border-top: solid 1px #ae325c;
+}
+
+.filter {
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+}
+
+.filter-text {
+    top: 0;
+}
+
+.color-red {
+    color: red;
+}
+
+.icon-twitter {
+    color: white;
+    background-color: #1da1f3;
+    opacity: 0.9;
+}
+
+.icon-facebook {
+    color: white;
+    background-color: #3b5999;
+    opacity: 0.9;
+}
+
+.icon-gmail {
+    color: white;
+    background-color: #dd4c39;
+    opacity: 0.9;
+}
+
+.icon-twitter:hover,
+.icon-facebook:hover,
+.icon-gmail:hover {
+    opacity: 1;
+}
+
+.footer-nav:hover {
+    color: #fdcc52;
+    cursor: pointer;
+}
