@@ -1,0 +1,11 @@
+@use 'colors';
+
+@mixin fonts ($main-font) {
+    font-family: $main-font, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+@mixin social-icon ($background-color) {    
+        color: colors.$main-white;
+        background-color: $background-color;        
+}

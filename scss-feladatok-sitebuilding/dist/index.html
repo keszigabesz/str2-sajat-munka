@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Age - SCSS</title>
+
+    <script src="https://kit.fontawesome.com/402e76f4f2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Lato&family=Mulish&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav catamaran">
+            <a href="#" class="active">Start Bootstrap</a>
+            <div id="header__nav-links">
+                <a href="#download">download</a>
+                <a href="#features">features</a>
+                <a href="#contact">contact</a>
+            </div>
+            <a href="javascript:void(0);" class="hamburger-icon" onclick="openMenuBar()">
+                Menu <i class="fas fa-bars"></i>
+            </a>
+        </nav>
+
+        <section class="header__section">
+            <div class="header__container-text">
+                <h1 class="header__container-head catamaran">
+                    New Age is an app landing page that will help you beautifully showcase our new mobile app, or
+                    anything
+                    else!
+                </h1>
+                <button class="btn">
+                    start now for free!
+                </button>
+            </div>
+            <div class="header__image-container">
+                <img src="./img/phone.png" alt="Cellphone" class="phone-img">
+                <img src="./img/demo-screen-1.jpg" alt="Cellphone screen" class="phone-screen-img">
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="download">
+            <h1 class="section__header-dark catamaran">Discover what the buzz is all about!</h1>
+            <p class="section__paragraph text-center mulish">Our app is available on any mobile device! Download now to
+                get
+                started!</p>
+
+            <div class="section__store text-center">
+                <div class="">
+                    <a href="https://www.apple.com/app-store/" target="_blank">
+                        <img src="./img/google-play-badge.svg" alt="Apple Store" class="section__store-img">
+                    </a>
+                </div>
+                <div class="">
+                    <a href="https://play.google.com/store" target="_blank">
+                        <img src="./img/app-store-badge.svg" alt="Google Store" class="section__store-img">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="features__image-container">
+                <img src="./img/phone.png" alt="Cellphone" class="phone-img">
+                <img src="./img/demo-screen-1.jpg" alt="Cellphone screen" class="phone-screen-img">
+            </div>
+            <div class="card card-1">
+                <div class="card__img">
+                    <i class="fas fa-mobile-alt fa-3x color-magenta pb-1"></i>
+                </div>
+                <div class="card__body">
+                    <h3 class="card__body-head catamaran">Device Mockups</h3>
+                    <p class="card__body-parag mulish">Ready to use HTML/CSS device
+                        mockups, no Photoshop required!</p>
+                </div>
+
+            </div>
+            <div class="card card-2">
+                <div class="card__img">
+                    <i class="fas fa-camera fa-3x color-magenta pb-1"></i>
+                </div>
+                <div class="card__body">
+                    <h3 class="card__body-head catamaran">Flexible Use</h3>
+                    <p class="card__body-parag mulish">Put an image, video, animation, or
+                        anything else in the screen!</p>
+                </div>
+
+            </div>
+            <div class="card card-3">
+                <div class="card__img">
+                    <i class="fas fa-gift fa-3x color-magenta pb-1"></i>
+                </div>
+                <div class="card__body">
+                    <h3 class="card__body-head catamaran">Free to Use</h3>
+                    <p class="card__body-parag mulish">As always, this theme is free to
+                        download and use for any purpose!</p>
+                </div>
+
+            </div>
+            <div class="card card-4">
+                <div class="card__img">
+                    <i class="fas fa-lock-open fa-3x color-magenta pb-1"></i>
+                </div>
+                <div class="card__body">
+                    <h3 class="card__body-head catamaran">Open Source</h3>
+                    <p class="card__body-parag mulish">Since this theme is MIT licensed, you
+                        can use it commercially!</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="filter-section">
+            <div>
+                <img src="./img/bg-cta.jpg" alt="Man with cellphone." class="filter-img">
+            </div>
+            <div class="filter"></div>
+            <div class="filter-text">
+                <h1 class="section__header-light catamaran">Stop waiting.<br>
+                    Start building.</h1>
+
+                <button class="btn">
+                    let's get started!</button>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1 class="section__header-dark catamaran">We <i class="fas fa-heart color-red"></i> new friends!</h1>
+            <div class="contact__container-icons">
+                <div class="contact__icon contact__icon-twitter">
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="fab fa-twitter contact__icon-twitter"></i>
+                    </a>
+                </div>
+                <div class="contact__icon contact__icon-facebook">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fa fa-facebook contact__icon-facebook"></i>
+                    </a>
+                </div>
+                <div class="contact__icon contact__icon-gmail">
+                    <a href="https://translate.google.com/" target="_blank">
+                        <i class="fa fa-google-plus contact__icon-gmail"></i>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="">&copy; Your Website 2018. All rights reserved.</p>
+        <ul class="">
+            <li class="">
+                <a class="" id="openModalPrivacy">Privacy</a>
+            </li>
+            <li class="">
+                <a class="" id="openModalTerms">Terms</a>
+            </li>
+            <li class="">
+                <a class="" id="openModalFaq">FAQ</a>
+            </li>
+        </ul>
+    </footer>
+
+    <div class="modal">
+        <div class="modal__content">
+            <div class="modal__content-header">
+                <span class="modal__content-close">&times;</span>
+                <h2></h2>
+            </div>
+            <div class="modal__content-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate expedita, asperiores natus magnam
+                    eum dolore doloribus dolorem ipsam tempore a tenetur fugit mollitia necessitatibus esse sunt
+                    laboriosam cum minima corporis!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, voluptas nulla. Esse
+                    perspiciatis suscipit debitis natus voluptatem cum nihil eveniet. Magnam natus porro consequatur at,
+                    reiciendis neque tempore pariatur voluptate.!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate expedita, asperiores natus magnam
+                    eum dolore doloribus dolorem ipsam tempore a tenetur fugit mollitia necessitatibus esse sunt
+                    laboriosam cum minima corporis!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
